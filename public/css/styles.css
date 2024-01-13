@@ -441,8 +441,9 @@ video {
   margin-left: 1rem;
   margin-right: 1rem;
 }
-.mb-12{
-  margin-bottom: 3rem;
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
 }
 .mb-14{
   margin-bottom: 3.5rem;
@@ -453,8 +454,14 @@ video {
 .mb-24{
   margin-bottom: 6rem;
 }
+.mb-4{
+  margin-bottom: 1rem;
+}
 .mb-5{
   margin-bottom: 1.25rem;
+}
+.mb-6{
+  margin-bottom: 1.5rem;
 }
 .mb-9{
   margin-bottom: 2.25rem;
@@ -465,17 +472,8 @@ video {
 .mr-auto{
   margin-right: auto;
 }
-.mt-24{
-  margin-top: 6rem;
-}
-.mt-20{
-  margin-top: 5rem;
-}
 .mt-10{
   margin-top: 2.5rem;
-}
-.mb-6{
-  margin-bottom: 1.5rem;
 }
 .flex{
   display: flex;
@@ -489,11 +487,23 @@ video {
 .h-32{
   height: 8rem;
 }
+.h-6{
+  height: 1.5rem;
+}
+.h-full{
+  height: 100%;
+}
 .min-h-screen{
   min-height: 100vh;
 }
 .w-32{
   width: 8rem;
+}
+.w-6{
+  width: 1.5rem;
+}
+.w-auto{
+  width: auto;
 }
 .w-full{
   width: 100%;
@@ -530,6 +540,9 @@ video {
 }
 .gap-4{
   gap: 1rem;
+}
+.gap-6{
+  gap: 1.5rem;
 }
 .gap-7{
   gap: 1.75rem;
@@ -591,14 +604,12 @@ video {
 .bg-cover{
   background-size: cover;
 }
-.p-12{
-  padding: 3rem;
+.object-cover{
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .p-4{
   padding: 1rem;
-}
-.p-3{
-  padding: 0.75rem;
 }
 .p-5{
   padding: 1.25rem;
@@ -610,6 +621,10 @@ video {
 .px-6{
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+.px-8{
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 .py-10{
   padding-top: 2.5rem;
@@ -623,15 +638,14 @@ video {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
 }
-.px-8{
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
 .pb-10{
   padding-bottom: 2.5rem;
 }
 .pb-12{
   padding-bottom: 3rem;
+}
+.pb-14{
+  padding-bottom: 3.5rem;
 }
 .pb-2{
   padding-bottom: 0.5rem;
@@ -645,11 +659,26 @@ video {
 .pb-7{
   padding-bottom: 1.75rem;
 }
+.pb-8{
+  padding-bottom: 2rem;
+}
+.pl-2{
+  padding-left: 0.5rem;
+}
 .pl-4{
   padding-left: 1rem;
 }
+.pl-6{
+  padding-left: 1.5rem;
+}
 .pl-8{
   padding-left: 2rem;
+}
+.pr-2{
+  padding-right: 0.5rem;
+}
+.pr-4{
+  padding-right: 1rem;
 }
 .pr-5{
   padding-right: 1.25rem;
@@ -660,17 +689,29 @@ video {
 .pt-12{
   padding-top: 3rem;
 }
+.pt-14{
+  padding-top: 3.5rem;
+}
 .pt-16{
   padding-top: 4rem;
 }
 .pt-3{
   padding-top: 0.75rem;
 }
+.pt-4{
+  padding-top: 1rem;
+}
 .pt-7{
   padding-top: 1.75rem;
 }
 .pt-9{
   padding-top: 2.25rem;
+}
+.pl-3{
+  padding-left: 0.75rem;
+}
+.pr-3{
+  padding-right: 0.75rem;
 }
 .text-center{
   text-align: center;
@@ -685,6 +726,10 @@ video {
 }
 .text-\[42px\]{
   font-size: 42px;
+}
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 .text-sm{
   font-size: 0.875rem;
@@ -767,20 +812,26 @@ body{
 }
 
 @media (min-width: 768px){
+  .md\:mb-12{
+    margin-bottom: 3rem;
+  }
   .md\:mb-7{
     margin-bottom: 1.75rem;
   }
   .md\:mt-20{
     margin-top: 5rem;
   }
-  .md\:mb-12{
-    margin-bottom: 3rem;
-  }
   .md\:h-40{
     height: 10rem;
   }
+  .md\:h-\[31px\]{
+    height: 31px;
+  }
   .md\:w-40{
     width: 10rem;
+  }
+  .md\:w-\[31px\]{
+    width: 31px;
   }
   .md\:max-w-\[490px\]{
     max-width: 490px;
@@ -794,11 +845,17 @@ body{
   .md\:pb-12{
     padding-bottom: 3rem;
   }
+  .md\:pb-16{
+    padding-bottom: 4rem;
+  }
   .md\:pb-8{
     padding-bottom: 2rem;
   }
   .md\:pl-6{
     padding-left: 1.5rem;
+  }
+  .md\:pl-8{
+    padding-left: 2rem;
   }
   .md\:pl-\[74px\]{
     padding-left: 74px;
@@ -809,6 +866,9 @@ body{
   .md\:pr-\[34px\]{
     padding-right: 34px;
   }
+  .md\:pr-\[73px\]{
+    padding-right: 73px;
+  }
   .md\:pt-12{
     padding-top: 3rem;
   }
@@ -818,9 +878,16 @@ body{
   .md\:pt-9{
     padding-top: 2.25rem;
   }
+  .md\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
   .md\:text-3xl{
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+  .md\:text-\[32px\]{
+    font-size: 32px;
   }
   .md\:text-\[64px\]{
     font-size: 64px;
@@ -828,6 +895,10 @@ body{
   .md\:text-base{
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+  .md\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 
@@ -838,6 +909,9 @@ body{
   }
   .lg\:mb-0{
     margin-bottom: 0px;
+  }
+  .lg\:w-full{
+    width: 100%;
   }
   .lg\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
