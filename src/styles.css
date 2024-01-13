@@ -6,11 +6,3 @@ body{
   font-family: DM Sans , sans-serif;
 }
 
-.bg-gradient::after {
-  background: linear-gradient(to left, #197AC9, #FFFFFF00);
-  width: calc(100% + 140px);
-  height: calc(100% + 400px);
-  display: block;
-  border-radius: 30px;
-
-}
