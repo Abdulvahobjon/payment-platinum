@@ -366,7 +366,7 @@
             <p class="text-[#333] md:text-xl text-base mb-9">
               <b
                 >Netevia Platinum, a dynamic division of the
-                <a href="#" class="underline">FinTech leader</a></b
+                <span class="underline">FinTech leader</span></b
               >
               Netevia, specializes in direct-to-merchant sales and is
               experiencing unprecedented growth.
@@ -406,80 +406,101 @@
 
     <!-- form start -->
     <section
-      id="form"
-      class="hidden z-50 fixed top-0 left-0 w-full items-center justify-center min-h-screen px-4"
+    id="form"
+    class="hidden z-50 fixed top-0 left-0 w-full items-center justify-center min-h-screen px-4"
+  >
+    <div
+      id="overlay"
+      class="bg-[rgba(145,168,189,0.60)] absolute top-0 left-0 w-full h-full"
+    ></div>
+    <div
+      id="openForm"
+      class="max-w-[575px] relative w-full p-5 md:p-12 bg-[#F5F5F5] rounded-[30px] border border-black"
     >
-      <div
-        id="overlay"
-        class="bg-[rgba(145,168,189,0.60)] absolute top-0 left-0 w-full h-full"
-      ></div>
-      <div
-        id="openForm"
-        class="max-w-[575px] relative w-full p-5 md:p-12 bg-[#F5F5F5] rounded-[30px] border border-black"
+      <button
+        id="close"
+        class="absolute right-4 md:right-12 top-4 md:top-9 flex"
       >
-        <button id="close" class="absolute right-4 md:right-12 top-4 md:top-9 flex">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+        >
+          <path
+            d="M22 22L2 2M22 2L2 22"
+            stroke="#023047"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
+
+      <h2 class="text-[#023047] text-4xl leading-normal text-center mb-2">
+        Get In Touch
+      </h2>
+      <p class="text-[#023047] font-sm text-center mb-6 md:mb-12">
+        <i>Our friendly team will contact you soon!</i>
+      </p>
+
+      <form
+        action="https://jsonplaceholder.typicode.com/posts"
+        method="post"
+        class="flex flex-col gap-4"
+      >
+        <input
+          name="First name*"
+          class="shadow-card-shadow-3 p-4 rounded-2xl placeholder:text-[#023047] text-xs leading-normal"
+          type="text"
+          required
+          placeholder="First name*"
+        />
+        <input
+          name="Last name*"
+          class="shadow-card-shadow-3 p-4 rounded-2xl placeholder:text-[#023047] text-xs leading-normal"
+          type="text"
+          required
+          placeholder="Last name*"
+        />
+        <input
+          name="Email*"
+          class="shadow-card-shadow-3 p-4 rounded-2xl placeholder:text-[#023047] text-xs leading-normal"
+          type="email"
+          required
+          placeholder="Email*"
+        />
+        <input
+          name="Phone number*"
+          class="shadow-card-shadow-3 p-4 rounded-2xl placeholder:text-[#023047] text-xs leading-normal"
+          type="number"
+          required
+          placeholder="Phone number*"
+        />
+
+        <div class="flex justify-end mt-10 md:mt-20">
+          <button
+            class="bg-[#023047] hover:opacity-80 transition-all flex gap-4 items-center text-white leading-normal rounded-[42.5px] py-3 px-8"
           >
-            <path
-              d="M22 22L2 2M22 2L2 22"
-              stroke="#023047"
-              stroke-width="3"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-        </button>
-
-        <h2 class="text-[#023047] text-4xl leading-normal text-center mb-2">
-          Get In Touch
-        </h2>
-        <p class="text-[#023047] font-sm text-center mb-6 md:mb-12">
-          <i>Our friendly team will contact you soon!</i>
-        </p>
-
-        <form action="#" class="flex flex-col gap-4">
-          <input
-            class="shadow-card-shadow-3 p-4 rounded-2xl placeholder:text-[#023047] text-xs leading-normal"
-            type="text"
-            required
-            placeholder="First name*"
-          />
-          <input
-            class="shadow-card-shadow-3 p-4 rounded-2xl placeholder:text-[#023047] text-xs leading-normal"
-            type="text"
-            required
-            placeholder="Last name*"
-          />
-          <input
-            class="shadow-card-shadow-3 p-4 rounded-2xl placeholder:text-[#023047] text-xs leading-normal"
-            type="email"
-            required
-            placeholder="Email*"
-          />
-          <input
-            class="shadow-card-shadow-3 p-4 rounded-2xl placeholder:text-[#023047] text-xs leading-normal"
-            type="number"
-            required
-            placeholder="Phone number*"
-          />
-
-          <div class="flex justify-end mt-10 md:mt-20">
-            <button
-              class="bg-[#023047] hover:opacity-80 transition-all flex gap-4 items-center text-white leading-normal rounded-[42.5px] py-3 px-8">
-              Send
-              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22" fill="none">
-                <path d="M15.2235 2.13544C10.4478 -0.700719 4.34047 0.982555 1.58321 5.89493C-1.17405 10.8073 0.462397 17.0894 5.23811 19.9255C10.0138 22.7617 16.1211 21.0784 18.8784 16.166C21.6357 11.2537 19.9992 4.9716 15.2235 2.13544ZM13.9175 13.485C13.8201 13.5123 13.7185 13.5196 13.6185 13.5064C13.5184 13.4933 13.4218 13.46 13.3342 13.4085C13.2467 13.357 13.1698 13.2882 13.1081 13.2061C13.0464 13.1241 13.001 13.0303 12.9745 12.9301L12.0381 9.39078L8.83172 15.1033C8.72986 15.2848 8.56209 15.4172 8.36532 15.4714C8.16855 15.5256 7.95889 15.4972 7.78247 15.3925C7.60604 15.2877 7.47731 15.1151 7.42459 14.9127C7.37186 14.7103 7.39946 14.4947 7.50132 14.3132L10.7077 8.6007L7.25958 9.53623C7.16198 9.56266 7.06027 9.56905 6.96027 9.55504C6.86027 9.54104 6.76392 9.50691 6.67674 9.45461C6.58956 9.4023 6.51325 9.33285 6.45216 9.25021C6.39108 9.16757 6.34642 9.07337 6.32073 8.97297C6.29504 8.87258 6.28882 8.76796 6.30243 8.66509C6.31605 8.56223 6.34923 8.46313 6.40008 8.37345C6.45093 8.28378 6.51845 8.20528 6.59879 8.14245C6.67913 8.07961 6.77072 8.03367 6.86832 8.00725L12.0999 6.58738C12.2959 6.53419 12.5044 6.56285 12.6799 6.66709C12.8555 6.77133 12.9838 6.94272 13.037 7.14389L14.4574 12.5142C14.484 12.6144 14.4912 12.719 14.4785 12.8221C14.4657 12.9252 14.4334 13.0246 14.3832 13.1148C14.333 13.205 14.2661 13.2841 14.1862 13.3476C14.1063 13.4112 14.015 13.4578 13.9175 13.485Z" fill="white"/>
-              </svg>
-            </button>
-          </div>
-        </form>
-      </div>
-    </section>
+            Send
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="21"
+              height="22"
+              viewBox="0 0 21 22"
+              fill="none"
+            >
+              <path
+                d="M15.2235 2.13544C10.4478 -0.700719 4.34047 0.982555 1.58321 5.89493C-1.17405 10.8073 0.462397 17.0894 5.23811 19.9255C10.0138 22.7617 16.1211 21.0784 18.8784 16.166C21.6357 11.2537 19.9992 4.9716 15.2235 2.13544ZM13.9175 13.485C13.8201 13.5123 13.7185 13.5196 13.6185 13.5064C13.5184 13.4933 13.4218 13.46 13.3342 13.4085C13.2467 13.357 13.1698 13.2882 13.1081 13.2061C13.0464 13.1241 13.001 13.0303 12.9745 12.9301L12.0381 9.39078L8.83172 15.1033C8.72986 15.2848 8.56209 15.4172 8.36532 15.4714C8.16855 15.5256 7.95889 15.4972 7.78247 15.3925C7.60604 15.2877 7.47731 15.1151 7.42459 14.9127C7.37186 14.7103 7.39946 14.4947 7.50132 14.3132L10.7077 8.6007L7.25958 9.53623C7.16198 9.56266 7.06027 9.56905 6.96027 9.55504C6.86027 9.54104 6.76392 9.50691 6.67674 9.45461C6.58956 9.4023 6.51325 9.33285 6.45216 9.25021C6.39108 9.16757 6.34642 9.07337 6.32073 8.97297C6.29504 8.87258 6.28882 8.76796 6.30243 8.66509C6.31605 8.56223 6.34923 8.46313 6.40008 8.37345C6.45093 8.28378 6.51845 8.20528 6.59879 8.14245C6.67913 8.07961 6.77072 8.03367 6.86832 8.00725L12.0999 6.58738C12.2959 6.53419 12.5044 6.56285 12.6799 6.66709C12.8555 6.77133 12.9838 6.94272 13.037 7.14389L14.4574 12.5142C14.484 12.6144 14.4912 12.719 14.4785 12.8221C14.4657 12.9252 14.4334 13.0246 14.3832 13.1148C14.333 13.205 14.2661 13.2841 14.1862 13.3476C14.1063 13.4112 14.015 13.4578 13.9175 13.485Z"
+                fill="white"
+              />
+            </svg>
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
 
     <script src="./js/app.js"></script>
   </body>
