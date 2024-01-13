@@ -884,27 +884,24 @@ body{
   font-family: DM Sans , sans-serif;
 }
 
-.active {
-  transform: translateY(0); /* modalni ekranga olib kelish */
-  opacity: 1; /* modalni aniq ko'rsatish */
+html{
+  scroll-behavior: smooth;
 }
-#form {
-    /* transition xususiyatidagi vaqtni 1s ga oshirish */
-    transition: all 1s;
-    /* qolgan xususiyatlar o'zgarmaydi */
-    opacity: 0;
-}
+
 .placeholder\:text-\[\#023047\]::-moz-placeholder{
   --tw-text-opacity: 1;
   color: rgb(2 48 71 / var(--tw-text-opacity));
 }
+
 .placeholder\:text-\[\#023047\]::placeholder{
   --tw-text-opacity: 1;
   color: rgb(2 48 71 / var(--tw-text-opacity));
 }
+
 .hover\:opacity-80:hover{
   opacity: 0.8;
 }
+
 @media (min-width: 768px){
   .md\:col-span-2{
     grid-column: span 2 / span 2;
@@ -1045,6 +1042,7 @@ body{
     line-height: 1.75rem;
   }
 }
+
 @media (min-width: 1024px){
   .lg\:absolute{
     position: absolute;

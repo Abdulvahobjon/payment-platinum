@@ -6,13 +6,6 @@ body{
   font-family: DM Sans , sans-serif;
 }
 
-.active {
-  transform: translateY(0); /* modalni ekranga olib kelish */
-  opacity: 1; /* modalni aniq ko'rsatish */
-}
-#form {
-    /* transition xususiyatidagi vaqtni 1s ga oshirish */
-    transition: all 1s;
-    /* qolgan xususiyatlar o'zgarmaydi */
-    opacity: 0;
+html{
+  scroll-behavior: smooth;
 }
