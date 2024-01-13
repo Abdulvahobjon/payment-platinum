@@ -30,13 +30,13 @@ close.addEventListener('click' , function(){
 
 document.querySelector('form').addEventListener('submit', function() {
   // Formadagi malumotlarni olish
-  var email = document.querySelectorAll('input')[0].value;
-  var firstName = document.querySelectorAll('input')[1].value;
-  var lastName = document.querySelectorAll('input')[2].value;
-  var phoneNumber = document.querySelectorAll('input')[3].value;
+  let email = document.querySelectorAll('input')[0].value;
+  let firstName = document.querySelectorAll('input')[1].value;
+  let lastName = document.querySelectorAll('input')[2].value;
+  let phoneNumber = document.querySelectorAll('input')[3].value;
 
   // Malumotlarni JSON formatida tayyorlash
-  var data = {
+  let data = {
       firstName: firstName,
       lastName: lastName,
       email: email,
@@ -54,13 +54,11 @@ document.querySelector('form').addEventListener('submit', function() {
   .then(response => response.json())
   .then(data => {
       console.log('Yuborilgan malumotlar:', data);
-      // Boshqa harakatlar ham qilishingiz mumkin, masalan, xabar chiqarish
       alert('Malumotlar muvaffaqiyatli yuborildi!');
       document.querySelector('form').reset()
   })
   .catch(error => {
       console.error('Xatolik:', error);
-      // Boshqa harakatlar ham qilishingiz mumkin, masalan, xabar chiqarish
       alert('Malumotlarni yuborishda xatolik yuz berdi.');
   });
 });
